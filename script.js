@@ -16,3 +16,31 @@ document.getElementById("message-form").addEventListener("submit", async (event)
     }
   });
   
+  async function fetchPosts() {
+    const user = supabase.auth.user();
+    if (!user) {
+      document.getElementById("posts-container").innerHTML = "<p>Please log in to view your posts.</p>";
+      return;
+    }
+  
+    const { data, error } = await supabase.from("posts").select("*").eq("user_id", user.id);
+    if (error) {
+      console.error("Error fetching posts:", error.message);
+      document.getElementById("posts-container").innerHTML = "<p>Error loading posts.</p>";
+    } else {
+      const postsHtml = data.map(post => `
+        <div>
+          <h3>${post.title}</h3>
+          <p>${post.content}</p>
+        </div>
+      `).join("");
+      document.getElementById("posts-container").innerHTML = postsHtml;
+    }
+  }
+  
+  // Call fetchPosts() after user logs in
+  supabase.auth.onAuthStateChange((event, session) => {
+    if (session) {
+      fetchPosts();
+    }
+  });
