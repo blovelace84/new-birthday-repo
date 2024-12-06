@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Birthday</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase Integration</title>
 </head>
 <body>
-<header>
-    <h1>Happy 80th Birthday, Naomi</h1>
-   
-    <img src="pictures of mom/Mommy.jpg" alt="Mom">
-</header>
-    <main>
-        <iframe 
-        src="https://1drv.ms/p/c/a9e4518eaf9be0b2/IQRpGskfuO6NSqriqmprjcZsAexfCdJjljGqLDnQP1SUq2k?em=2&amp;wdAr=1.7777777777777777" 
-        width="476px" 
-        height="288px" 
-        frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-    </main>
-    <div id="root"></div>
-    <footer>
-        <p>This is a Project by Brittani Lovelace and Shon Williams. All rights reserved.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+  <h1>Happy Birthday Naomi</h1>
+  
+  <!-- React Root Element -->
+  <div id="root"></div>
+
+  <!-- Supabase Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  <!-- React, ReactDOM, and Babel -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Your Custom Script -->
+  <script type="text/babel" src="app.js"></script>
 </body>
 </html>
