@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Register from './Register';
-import Login from './Login'; // Import the Login component
+import Posts from './Posts';
 import Homepage from './Homepage'; // Import Homepage component
 import './App.css';
 import { createClient } from '@supabase/supabase-js';
@@ -16,14 +15,13 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Register supabase={supabase} />} />  {/* Default route */}
-          <Route path="/login" element={<Login />} />  {/* Login route */}
-          <Route path="/homepage" element={<Homepage/>} />
+          {/* Change default route to Homepage */}
+          <Route path="/" element={<Homepage supabase={supabase} />} />  {/* Default route */}
+          <Route path="/posts" element={<Posts />} />  {/* Add a route for posts */}
         </Routes>
       </div>
-      </Router>
+    </Router>
   );
 }
 
 export default App;
-
