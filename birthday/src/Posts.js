@@ -56,7 +56,7 @@ const Posts = () => {
           />
         </div>
         <div className="input-group">
-          <label htmlFor="text">Post</label>
+          <label htmlFor="text">Say Happy Birthday!</label>
           <textarea 
             id="text" 
             value={text} 
@@ -66,7 +66,7 @@ const Posts = () => {
           ></textarea>
         </div>
         <button type="submit" disabled={loading}>
-          {loading ? 'Posting...' : 'Post'}
+          Submit
         </button>
       </form>
 
