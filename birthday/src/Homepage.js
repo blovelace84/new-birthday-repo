@@ -28,8 +28,9 @@ const Homepage = () => {
 
   return (
     <div className="homepage-container">
-      <h1>Welcome to the Homepage</h1>
-      <p>Here are the posts:</p>
+      <h1>Happy Birthday, Naomi</h1>
+      <p>May you enjoy your special with love and happiness.</p>
+      <p>Posts:</p>
 
       <div className="posts-list">
         {posts.map(post => (

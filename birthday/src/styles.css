@@ -1,100 +1,67 @@
+body{
+  background-color: ghostwhite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px;
+  padding: 10px;
+  background-color: deepskyblue;
+  border-radius: 8px;
+}
+
+.post{
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: whitesmoke;
+}
+
+.post-title{
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.navigate-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigate-button:hover{
+  background-color: green;
+}
+
+.post-form-container{
+  background-color: ghostwhite;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 
-  
-  /**/* General Styles */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f2f5;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #4267b2;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .search-bar {
-    padding: 5px;
-    border: none;
-    border-radius: 16px;
-    width: 60%;
-  }
-  
-  .profile-menu {
-    cursor: pointer;
-  }
-  
-  /* Main Content */
-  .main-content {
-    padding: 20px;
-  }
-  
-  .post-input {
-    margin-bottom: 20px;
-  }
-  
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    resize: none;
-    font-size: 1rem;
-  }
-  
-  button {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #4267b2;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #365899;
-  }
-  
-  /* Timeline */
-  .timeline {
-    margin-top: 20px;
-  }
-  
-  .post {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .no-posts {
-    color: #888;
-    text-align: center;
-  }
+.input-button {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-
+.input-button:hover {
+  background-color: #0056b3;
+}
