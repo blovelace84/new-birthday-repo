@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Posts from './Posts';
 import Homepage from './Homepage'; // Import Homepage component
+import Bio from './Bio';
 import './App.css';
 import { createClient } from '@supabase/supabase-js';
 
@@ -18,6 +19,7 @@ function App() {
           {/* Change default route to Homepage */}
           <Route path="/" element={<Homepage supabase={supabase} />} />  {/* Default route */}
           <Route path="/posts" element={<Posts />} />  {/* Add a route for posts */}
+          <Route path="/bio" element={<Bio />} />  {/* Add a route for posts */}
         </Routes>
       </div>
     </Router>
