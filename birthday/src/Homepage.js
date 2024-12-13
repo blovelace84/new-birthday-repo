@@ -48,6 +48,13 @@ const Homepage = () => {
       >
         Create a Post
       </button>
+      <button
+        onClick={() => navigate('/bio')}
+        className="navigate-button"
+      >
+        Bio
+      </button>
+      
     </div>
   );
 };
