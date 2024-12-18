@@ -1,25 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import './Bio.css';
 
-function Bio({ name, bio, avatar, presentationUrl }) {
+const Bio = ({name, description, imageUrl}) => {
+
+  const [showMore, setShowMore] = useState(false);
+  const handleToggle = () => {
+    setShowMore(!showMore);
+  }
   return (
     <div className="bio-container">
-      <img src={avatar} alt={`${name}'s avatar`} className="bio-avatar" />
+      {imageUrl && <img src={imageUrl} alt={`${name}'s profile`} className="bio-image"></img>}
       <h2 className="bio-name">{name}</h2>
-      <p className="bio-description">{bio}</p>
+      <p className="bio-description">{description}</p>
 
-      <div className="presentation-container">
-        <h3>Presentation</h3>
-        <iframe
-          src={"https://1drv.ms/p/c/a9e4518eaf9be0b2/EWkayR-47o1KquKqamuNxmwBPGhPo9n4p8ulZDUQy47NUw?e=fdoxu7"}
-          title={`${name}'s Presentation`}
-          width="100%"
-          height="480"
-          allowFullScreen
-          
-        ></iframe>
-      </div>
+      <button className="bio-button" onClick={handleToggle}>
+        {showMore ? 'Show Less' : 'Show More'}
+      </button>
+
+      {showMore && (
+        <p className="bio-extra">January 1, 1945 at 12:20 am in the basement of Dunn Hospital on Ellis Avenue, Naomi Delores Spece arrived in this world.  The daughter of the late Luther Franklin Spence and Katie Naomi Freeman Spence, “Teenie Bow” was most likely the first child born in the new year.  But, it was 1945 and Jim Crow ruled the South.  Born into segregation, she would come of age during the height of the Civil Rights Movement in the 1960s.</p>
+      )}
     </div>
   );
-}
+};
 
 export default Bio;

@@ -1,0 +1,54 @@
+.bio-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.bio-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.bio-name {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.bio-description {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.bio-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bio-button:hover {
+    background-color: #45a049;
+}
+
+.bio-extra {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    text-align: left;
+}

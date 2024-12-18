@@ -19,7 +19,7 @@ function App() {
           {/* Change default route to Homepage */}
           <Route path="/" element={<Homepage supabase={supabase} />} />  {/* Default route */}
           <Route path="/posts" element={<Posts />} />  {/* Add a route for posts */}
-          <Route path="/bio" element={<Bio />} />  {/* Add a route for posts */}
+          <Route path="/bio" element={<Bio name="Naomi Lovelace" imageUrl="pictures of mom/Mommy.jpg"/>} />  {/* Add a route for posts */}
         </Routes>
       </div>
     </Router>
