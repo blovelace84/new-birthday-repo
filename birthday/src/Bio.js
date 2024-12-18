@@ -19,7 +19,10 @@ const Bio = ({name, description, imageUrl}) => {
 
       {showMore && (
         <p className="bio-extra">January 1, 1945 at 12:20 am in the basement of Dunn Hospital on Ellis Avenue, Naomi Delores Spece arrived in this world.  The daughter of the late Luther Franklin Spence and Katie Naomi Freeman Spence, “Teenie Bow” was most likely the first child born in the new year.  But, it was 1945 and Jim Crow ruled the South.  Born into segregation, she would come of age during the height of the Civil Rights Movement in the 1960s.</p>
+        
       )}
+
+      
     </div>
   );
 };
