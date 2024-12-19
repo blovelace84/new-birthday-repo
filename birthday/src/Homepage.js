@@ -29,7 +29,8 @@ const Homepage = () => {
   return (
     <div className="homepage-container">
       <h1>Happy Birthday, Naomi</h1>
-      <p>May you enjoy your special with love and happiness.</p>
+      <img src='pictures of mom/Mommy.jpg' alt='A picture of Mom'></img>
+      <p>May you enjoy your special day with love and happiness.</p>
       <p>Posts:</p>
 
       <div className="posts-list">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Bio.css';
 
+
 const Bio = ({name, imageUrl}) => {
 
   const [showMore, setShowMore] = useState(false);
