@@ -24,6 +24,8 @@ const Bio = ({name, imageUrl}) => {
       <button className="bio-button" onClick={handleToggle}>
         {showMore ? 'Show Less' : 'Show More'}
       </button>
+      <br />
+      <br />
       <button className="bio-button" onClick={handleNavigate}>
         Go to Homepage
       </button>
