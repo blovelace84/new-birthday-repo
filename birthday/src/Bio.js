@@ -1,12 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './Bio.css';
 
 const Bio = ({name, description, imageUrl}) => {
 
   const [showMore, setShowMore] = useState(false);
+  const navigate = useNavigate();
+
   const handleToggle = () => {
     setShowMore(!showMore);
   }
+
+  const handleNavigate = () => {
+    navigate('/'); //change the path to the homepage
+  };
   return (
     <div className="bio-container">
       {imageUrl && <img src={imageUrl} alt={`${name}'s profile`} className="bio-image"></img>}
@@ -33,6 +40,9 @@ const Bio = ({name, description, imageUrl}) => {
         </p>
         
       )}
+      <button className="bio-button" onClick={handleNavigate}>
+        Go to Homepage
+      </button>
     </div>
   );
 };
