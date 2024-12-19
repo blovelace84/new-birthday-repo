@@ -1,21 +1,9 @@
 import React from "react";
-import "./Video.css";
 
-
-const Video = ({videoUrl}) => {
-  const handleNavigate = () => {
-    window.location.href = "/";
-  };
+const VideoPlayer = ({src, controls = true, autoplay = false, muted= false}) => {
   return (
-    <div className="video-container">
-      <video className="video" controls>
-        <source src={videoUrl} type="video/mp4"></source>
-      </video>
-      <button className="navigate-button" onClick={handleNavigate}>
-        Go to Homepage
-      </button>
-    </div>
+    <video src={src} controls={controls} autoplay={autoplay}></video>
   );
-}
+};
 
-export default Video;
+export default VideoPlayer;

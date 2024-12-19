@@ -4,9 +4,9 @@ import Posts from './Posts';
 import Homepage from './Homepage'; // Import Homepage component
 import Bio from './Bio';
 import './App.css';
-import video from './Video';
-import { createClient } from '@supabase/supabase-js';
 import Video from './Video';
+import { createClient } from '@supabase/supabase-js';
+
 
 // Supabase credentials
 const supabaseUrl = 'https://zqvzatzhiyhxndxclnoh.supabase.co';
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Homepage supabase={supabase} />} />  {/* Default route */}
           <Route path="/posts" element={<Posts />} />  {/* Add a route for posts */}
           <Route path="/bio" element={<Bio name="Naomi Lovelace" imageUrl="pictures of mom/Mommy.jpg"/>} />  {/* Add a route for posts */}
-          <Route path="/video" element={<Video videoUrl="videos of mom/Mommy.mp4"/>} />  {/* Add a route for posts */}
+          <Route path='/videoplayer' element={<Video src={"Birthday Video/Birthday-video.mp4"} />} />
         </Routes>
       </div>
     </Router>
