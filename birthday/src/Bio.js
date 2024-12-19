@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Bio.css';
 
-const Bio = ({name, description, imageUrl}) => {
+const Bio = ({name, imageUrl}) => {
 
   const [showMore, setShowMore] = useState(false);
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Bio = ({name, description, imageUrl}) => {
     <div className="bio-container">
       {imageUrl && <img src={imageUrl} alt={`${name}'s profile`} className="bio-image"></img>}
       <h2 className="bio-name">{name}</h2>
-      <p className="bio-description">{description}</p>
+      
 
       <button className="bio-button" onClick={handleToggle}>
         {showMore ? 'Show Less' : 'Show More'}
