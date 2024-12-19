@@ -14,6 +14,7 @@ const Bio = ({name, imageUrl}) => {
   const handleNavigate = () => {
     navigate('/'); //change the path to the homepage
   };
+
   return (
     <div className="bio-container">
       {imageUrl && <img src={imageUrl} alt={`${name}'s profile`} className="bio-image"></img>}
@@ -23,7 +24,9 @@ const Bio = ({name, imageUrl}) => {
       <button className="bio-button" onClick={handleToggle}>
         {showMore ? 'Show Less' : 'Show More'}
       </button>
-
+      <button className="bio-button" onClick={handleNavigate}>
+        Go to Homepage
+      </button>
       {showMore && (
         <p className="bio-extra">January 1, 1945 at 12:20 am in the basement of Dunn Hospital on Ellis Avenue, Naomi Delores Spece arrived in this world.  
         The daughter of the late Luther Franklin Spence and Katie Naomi Freeman Spence, “Teenie Bow” was most likely the first child born in the new year.  
@@ -40,9 +43,7 @@ const Bio = ({name, imageUrl}) => {
         </p>
         
       )}
-      <button className="bio-button" onClick={handleNavigate}>
-        Go to Homepage
-      </button>
+      
     </div>
   );
 };
