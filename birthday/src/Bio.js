@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Bio.css';
+import myImage from './pictures of mom/Mommy.jpg';
 
 
 const Bio = ({name, imageUrl}) => {
@@ -18,7 +19,7 @@ const Bio = ({name, imageUrl}) => {
 
   return (
     <div className="bio-container">
-      {imageUrl && <img src={imageUrl} alt={`${name}'s profile`} className="bio-image"></img>}
+      <img src={myImage} alt='A picture of Mom'></img>
       <h2 className="bio-name">{name}</h2>
       
 

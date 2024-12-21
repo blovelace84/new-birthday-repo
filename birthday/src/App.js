@@ -19,9 +19,9 @@ function App() {
       <div className="App">
         <Routes>
           {/* Change default route to Homepage */}
-          <Route path="/" element={<Homepage supabase={supabase} />} />  {/* Default route */}
+          <Route path="/" element={<Homepage supabase={supabase}  />} />  {/* Default route */}
           <Route path="/posts" element={<Posts />} />  {/* Add a route for posts */}
-          <Route path="/bio" element={<Bio name="Naomi Lovelace" imageUrl="pictures of mom/Mommy.jpg"/>} />  {/* Add a route for posts */}
+          <Route path="/bio" element={<Bio name="Naomi Lovelace" imageUrl={("./pictures of mom/Mommy.jpg")} alt="A picture of Mommy" />} />  {/* Add a route for posts */}
           <Route path='/videoplayer' element={<Video src={"Birthday Video/Birthday-video.mp4"} />} />
         </Routes>
       </div>

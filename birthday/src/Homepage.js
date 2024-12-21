@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createClient } from '@supabase/supabase-js';
 import './styles.css';
+import mommyImage from './pictures of mom/Mommy.jpg';
 
 // Supabase credentials
 const supabaseUrl = 'https://zqvzatzhiyhxndxclnoh.supabase.co';
@@ -29,7 +30,7 @@ const Homepage = () => {
   return (
     <div className="homepage-container">
       <h1>Happy Birthday, Naomi</h1>
-      <img src='pictures of mom/Mommy.jpg' alt='A picture of Mom'></img>
+      <img src={mommyImage} alt='A picture of Mom'></img>
       <p>May you enjoy your special day with love and happiness.</p>
       <p>Posts:</p>
 
