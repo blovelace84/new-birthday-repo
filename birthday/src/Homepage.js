@@ -30,7 +30,7 @@ const Homepage = () => {
   return (
     <div className="homepage-container">
       <h1>Happy Birthday, Naomi</h1>
-      <img src={mommyImage} alt='A picture of Mom'></img>
+      <img src={mommyImage} alt='A picture of Mom' ></img>
       <p>May you enjoy your special day with love and happiness.</p>
       <p>Posts:</p>
 
