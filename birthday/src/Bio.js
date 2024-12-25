@@ -1,13 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import mommyImage from './pictures of mom/Another Pic of Mom.JPG';
 import './Bio.css';
 
-const Bio = ({ name, imageUrl, alt }) => {
+const Bio = ({ name, alt }) => {
   const navigate = useNavigate();
   return (
     <div className="bio-container">
       <h1>{name}</h1>
-      <img src={imageUrl} alt={alt} className="bio-image" />
+      <img src={mommyImage} alt={alt} className="bio-image" />
       <p>
       January 1, 1945 at 12:20 am in the basement of Dunn Hospital on Ellis Avenue, Naomi Delores
 Spece arrived in this world. The daughter of the late Luther Franklin Spence and Katie Naomi
