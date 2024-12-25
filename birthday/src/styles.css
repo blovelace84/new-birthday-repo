@@ -1,6 +1,6 @@
 body{
   background: rgb(10,143,235);
-  background: radial-gradient(circle, rgba(10,143,235,0.39539565826330536) 0%, rgba(9,219,8,1) 100%);
+  background: radial-gradient(circle, rgba(10,143,235,0.39539565826330536) 0%, rgba(25,8,219,1) 100%);
   font-family: Arial, Helvetica, sans-serif;
 }
 
