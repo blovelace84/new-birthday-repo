@@ -58,12 +58,7 @@ const Homepage = () => {
       >
         Bio
       </button>
-      <button
-        onClick={() => navigate('/video')}
-        className="navigate-button"
-        >
-        Video
-        </button>
+      
     </div>
   );
 };
