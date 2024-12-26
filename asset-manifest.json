@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/blovelace84/new-birthday-repo.git/static/css/main.2fc9ebe8.css",
-    "main.js": "/blovelace84/new-birthday-repo.git/static/js/main.cef426d5.js",
-    "static/js/388.09a25cfd.chunk.js": "/blovelace84/new-birthday-repo.git/static/js/388.09a25cfd.chunk.js",
-    "static/js/453.9c2b4894.chunk.js": "/blovelace84/new-birthday-repo.git/static/js/453.9c2b4894.chunk.js",
-    "static/media/Mommy.jpg": "/blovelace84/new-birthday-repo.git/static/media/Mommy.fe647a627fc3d6c1ac5f.jpg",
-    "static/media/Another Pic of Mom.JPG": "/blovelace84/new-birthday-repo.git/static/media/Another Pic of Mom.9b00c1e9e792e13f0f7a.JPG",
-    "index.html": "/blovelace84/new-birthday-repo.git/index.html",
-    "main.2fc9ebe8.css.map": "/blovelace84/new-birthday-repo.git/static/css/main.2fc9ebe8.css.map",
-    "main.cef426d5.js.map": "/blovelace84/new-birthday-repo.git/static/js/main.cef426d5.js.map",
-    "388.09a25cfd.chunk.js.map": "/blovelace84/new-birthday-repo.git/static/js/388.09a25cfd.chunk.js.map",
-    "453.9c2b4894.chunk.js.map": "/blovelace84/new-birthday-repo.git/static/js/453.9c2b4894.chunk.js.map"
+    "main.css": "/new-birthday-repo/static/css/main.2fc9ebe8.css",
+    "main.js": "/new-birthday-repo/static/js/main.93c4e1b6.js",
+    "static/js/388.09a25cfd.chunk.js": "/new-birthday-repo/static/js/388.09a25cfd.chunk.js",
+    "static/js/453.9c2b4894.chunk.js": "/new-birthday-repo/static/js/453.9c2b4894.chunk.js",
+    "static/media/Mommy.jpg": "/new-birthday-repo/static/media/Mommy.fe647a627fc3d6c1ac5f.jpg",
+    "static/media/Another Pic of Mom.JPG": "/new-birthday-repo/static/media/Another Pic of Mom.9b00c1e9e792e13f0f7a.JPG",
+    "index.html": "/new-birthday-repo/index.html",
+    "main.2fc9ebe8.css.map": "/new-birthday-repo/static/css/main.2fc9ebe8.css.map",
+    "main.93c4e1b6.js.map": "/new-birthday-repo/static/js/main.93c4e1b6.js.map",
+    "388.09a25cfd.chunk.js.map": "/new-birthday-repo/static/js/388.09a25cfd.chunk.js.map",
+    "453.9c2b4894.chunk.js.map": "/new-birthday-repo/static/js/453.9c2b4894.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fc9ebe8.css",
-    "static/js/main.cef426d5.js"
+    "static/js/main.93c4e1b6.js"
   ]
 }
