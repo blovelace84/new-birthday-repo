@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Posts from './Posts.js';
 import Homepage from './Homepage.js'; // Import Homepage component
 import Bio from './Bio.js';
+import Video from './Video.js'
 import './App.css';
 
 import { createClient } from '@supabase/supabase-js';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Homepage supabase={supabase}  />} />  {/* Default route */}
           <Route path="/posts" element={<Posts />} />  {/* Add a route for posts */}
           <Route path="/bio" element={<Bio name="Naomi Lovelace" imageUrl={("birthday/src/pictures of mom/Mommy.jpg")} alt="A picture of Mommy" />} />  {/* Add a route for posts */}
+          <Route path="/video" element={<Video src="birthday/src/Video/Naomi Lovelace Birthday Video.mp4" />} />  {/* Add a route for posts */}
         </Routes>
       </div>
     </Router>
